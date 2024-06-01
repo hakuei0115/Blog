@@ -9,16 +9,18 @@
     <div class="article-main">
       <header class="article-header">
         <%- partial('post/title', {class_name: 'p-name article-title'}) %>
-        <div class='meta-info-bar'>
-          <%- partial('post/date', {class_name: 'meta-info', date_format: null}) %>
-          <div class="need-seperator meta-info">
-            <%- partial('post/category') %>  
-          </div>
-          <div class="wordcount need-seperator meta-info">
-            <%- symbolsCount(post) %> <%- __('words') %> 
-          </div>
-        </div>
-        <%- partial('post/tag') %>
+          <% if (page.showTags !== false) { %>
+            <div class='meta-info-bar'>
+              <%- partial('post/date', {class_name: 'meta-info', date_format: null}) %>
+              <div class="need-seperator meta-info">
+                <%- partial('post/category') %>  
+              </div>
+              <div class="wordcount need-seperator meta-info">
+                <%- symbolsCount(post) %> <%- __('words') %> 
+              </div>
+            </div>
+            <%- partial('post/tag') %>
+          <% } %>
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
         <% if (post.excerpt && index){ %>
