@@ -25,6 +25,6 @@ showTags: false
 ### 聯絡我
 
 如果你對我的工作感興趣，或者有任何問題想要交流，歡迎通過以下社交媒體與我聯絡：
-- [Gmail](king20010115@gmail.com)
+- [Gmail](mailto:king20010115@gmail.com)
 
 感謝你的訪問，期待與你交流！
